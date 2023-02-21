@@ -1,0 +1,37 @@
+    
+    "pages/xijiesan/xijiesan",
+    "pages/xilidelou/xilidelou",
+    "pages/xyishitang/xyishitang",
+    "pages/xershitang/xershitang",
+    "pages/jiesan/jiesan",
+    "pages/three/three", 
+    "pages/two/two", 
+    "pages/one/one",   
+    "pages/per/per",
+    "pages/guanliyuan/guanliyuan",
+    "pages/guanliyuan2/guanliyuan2",
+    "pages/guanliyuan3/guanliyuan3",
+    "pages/x0/x0",
+    "pages/x1/x1",
+    "pages/x2/x2",
+
+    "pages/allcat/allcat",
+    "pages/logs/logs",
+    "pages/allcat/玳瑁及三花/玳瑁及三花",
+    "pages/allcat/橘猫及橘白/橘猫及橘白",
+    "pages/allcat/纯色/纯色",
+    "pages/allcat/奶牛/奶牛",
+    "pages/allcat/狸花/狸花",
+    "pages/allcat/所有/所有"
+  ],
+  "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "爱心雨伞登记",
+        "navigationBarTextStyle": "black"
+    },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+  
+
+}

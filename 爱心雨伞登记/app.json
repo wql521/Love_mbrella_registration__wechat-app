@@ -1,0 +1,63 @@
+{
+  "pages": [ 
+    "pages/index/index",
+    "pages/cats/大黄/大黄",
+    "pages/cats/小橘一家/小橘一家",
+    "pages/cats/小狸/小狸",
+    "pages/cats/墨白/墨白",
+    "pages/cats/胖虎/胖虎",
+    "pages/cats/呆呆/呆呆",
+    "pages/cats/狮子猫/狮子猫",
+    "pages/cats/布布/布布",
+    "pages/cats/黑子/黑子",
+    "pages/cats/花花/花花",
+    "pages/cats/奶牛妈妈/奶牛妈妈",
+    "pages/cats/小宝/小宝",
+    "pages/cats/小白/小白",
+    "pages/cats/小刘海/小刘海",
+    "pages/cats/虎妹/虎妹",
+    "pages/cats/警长/警长",
+    "pages/cats/多妹/多妹",
+    "pages/onlyone/onlyone",
+    "pages/All/All",
+    
+    "pages/xijiesan/xijiesan",
+    "pages/xilidelou/xilidelou",
+    "pages/xyishitang/xyishitang",
+    "pages/xershitang/xershitang",
+    "pages/jiesan/jiesan",
+    "pages/three/three", 
+    "pages/two/two", 
+    "pages/one/one",   
+    "pages/per/per",
+    "pages/guanliyuan/guanliyuan",
+    "pages/guanliyuan2/guanliyuan2",
+    "pages/guanliyuan3/guanliyuan3",
+    "pages/x0/x0",
+    "pages/x1/x1",
+    "pages/x2/x2",
+
+    "pages/allcat/allcat",
+    "pages/logs/logs",
+    "pages/allcat/玳瑁及三花/玳瑁及三花",
+    "pages/allcat/橘猫及橘白/橘猫及橘白",
+    "pages/allcat/纯色/纯色",
+    "pages/allcat/奶牛/奶牛",
+    "pages/allcat/狸花/狸花",
+    "pages/allcat/所有/所有"
+  ],
+  "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "爱心雨伞登记",
+        "navigationBarTextStyle": "black"
+    },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "requiredBackgroundModes":[
+    "audio",
+    "location"
+  ]
+  
+
+}

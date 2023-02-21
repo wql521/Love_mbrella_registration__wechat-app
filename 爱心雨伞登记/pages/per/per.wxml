@@ -1,0 +1,41 @@
+<!--数据绑定-->
+<view class="container" style="position: relative; left: 0rpx; top: 344rpx">
+<!--姓名绑定-->
+<view class="view-contain-ti">
+<text class="text-ti">姓名</text>
+<input type="text" bindinput="name" class="input1"></input>
+</view>
+
+<!--手机号绑定-->
+<view class="view-contain-ti">
+<text class="text-ti">手机号</text>
+<input type="number" bindinput="phone" class="input1"></input>
+</view>
+
+<!--班级绑定-->
+<view class="view-contain-ti">
+<text class="text-ti">班级</text>
+<input bindinput="banji" class="input1"></input>
+</view>
+
+<button class="button1" style="width: 196rpx; height: 80rpx; display: block; box-sizing: border-box; left: 0rpx; top: -12rpx; position: relative" bindtap="save" hidden="{{Hidden}}">保存</button>
+</view>
+
+<image src="cloud://cloud1-6g5n7d3da0d9860e.636c-cloud1-6g5n7d3da0d9860e-1313177812/常大青协LOGO(透明背景).png" style="position: relative; left: 256rpx; top: -941rpx; width: 232rpx; height: 232rpx; display: inline-block; box-sizing: border-box"></image>
+
+<view style="font-size: 120%; font-weight: bolder; position: relative; left: 136rpx; top: 30rpx; width: 511rpx; height: 54rpx; display: block; box-sizing: border-box">1. 每个人只有一次机会填写</view>
+<view style="font-size: 120%; font-weight: bolder; width: 511rpx; height: 54rpx; display: block; box-sizing: border-box; position: relative; left: 136rpx; top: 57rpx">2. 填写信息点击保存</view>
+<view style="font-size: 120%; font-weight: bolder; width: 538rpx; height: 104rpx; display: block; box-sizing: border-box; position: relative; left: 142rpx; top: 82rpx">3. 下次进入将不再出现本页面</view>
+
+<image src="cloud://cloud1-6g5n7d3da0d9860e.636c-cloud1-6g5n7d3da0d9860e-1313177812/qinyuan.jpeg" style="width: 136rpx; height: 128rpx; display: inline-block; box-sizing: border-box; position: relative; left: 0rpx; top: -310rpx"></image>
+
+<view class="section" style="position: relative; left: 169rpx; top: -1112rpx; width: 444rpx; height: 82rpx; display: block; box-sizing: border-box">
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}" style="position: relative; left: 0rpx; top: 0rpx; width: 400rpx; height: 86rpx; display: block; box-sizing: border-box">
+    <button class="picker;button2" style="position: relative; left: 0rpx; top: 0rpx; width: 220rpx; height: 86rpx; display: block; box-sizing: border-box">
+    {{array[index]}}</button>
+  </picker>
+</view>
+
+<image src="cloud://cloud1-6g5n7d3da0d9860e.636c-cloud1-6g5n7d3da0d9860e-1313177812/jiantou_xia.png" style="position: relative; left: 337rpx; top: -1272rpx; width: 74rpx; height: 54rpx; display: inline-block; box-sizing: border-box"></image>
+
+<text style="position: relative; left: 91rpx; top: -1358rpx">请点击下方绿色区域选择校区</text>

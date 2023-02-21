@@ -1,0 +1,8 @@
+/* pages/All/All.wxss */
+.box{
+  border: 3rpx solid #faca82;
+  border-radius: 10rpx;
+}
+.body{
+  font-size: 35rpx;
+}

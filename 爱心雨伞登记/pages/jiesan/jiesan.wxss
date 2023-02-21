@@ -1,0 +1,9 @@
+/*第一层按钮样式*/
+.center{
+  
+  text-align: center;
+}
+
+.button2{
+  background-color: #edeef2;
+}

@@ -1,0 +1,22 @@
+<!--pages/All/All.wxml-->
+<image src="cloud://cloud1-6g5n7d3da0d9860e.636c-cloud1-6g5n7d3da0d9860e-1313177812/政政的副本.jpg" style="position: relative; left: 195rpx; top: 29rpx; width: 344rpx; height: 344rpx; display: inline-block; box-sizing: border-box" bindtap="goxz"></image>
+<view class="box" style="position: relative; left: 11rpx; top: 48rpx; width: 712rpx; height: 484rpx; display: block; box-sizing: border-box">
+<text class="body">武进</text>
+<button bindtap="go1" type="primary" style="position: relative; left: 0rpx; top: -6rpx">主楼</button>
+<button bindtap="go2" type="primary" style="position: relative; left: 0rpx; top: 21rpx">辅楼</button>
+<button bindtap="go3" type="primary" style="position: relative; left: 0rpx; top: 48rpx">图书馆</button>
+<button bindtap="go4" type="primary" style="position: relative; left: 0rpx; top: 74rpx">借伞</button>
+</view>
+<view class="box" style="position: relative; left: 11rpx; top: 74rpx; width: 708rpx; height: 507rpx; display: block; box-sizing: border-box">
+<text class="body">西太湖</text>
+<button bindtap="go5" type="primary" style="position: relative; left: 0rpx; top: -6rpx">立德楼</button>
+<button bindtap="go6" type="primary" style="position: relative; left: 0rpx; top: 23rpx">一食堂</button>
+<button bindtap="go7" type="primary" style="position: relative; left: 0rpx; top: 52rpx">二食堂</button>
+<button bindtap="go8" type="primary" style="position: relative; left: 0rpx; top: 92rpx">借伞</button>
+</view>
+
+
+<view class="box" style="position: relative; left: 13rpx; top: 97rpx; width: 708rpx; height: 347rpx; display: block; box-sizing: border-box">
+  <image style="position: relative; left: 379rpx; top: 33rpx; width: 307rpx; height: 276rpx; display: inline-block; box-sizing: border-box" src="cloud://cloud1-6g5n7d3da0d9860e.636c-cloud1-6g5n7d3da0d9860e-1313177812/猫咪.jpg"/>
+  <button bindtap="Click3" type="primary" style="position: relative; left: -85rpx; top: -150rpx">常大猫咪图鉴</button>
+</view>

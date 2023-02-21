@@ -1,0 +1,5 @@
+/* pages/xi0/xi0.wxss */
+.input1 {
+  margin:  auto 10px;
+  background-color: bisque;
+}

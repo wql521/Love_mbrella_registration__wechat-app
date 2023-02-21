@@ -1,0 +1,6 @@
+/* pages/guanliyuan3/guanliyuan3.wxss */
+
+.input1 {
+  margin:  auto 10px;
+  background-color: bisque;
+}

@@ -1,0 +1,14 @@
+<!--pages/guanliyuan/guanliyuan.wxml-->
+<input bindinput="bianhao" class="input1" style="width: 284rpx; height: 80rpx; display: block; box-sizing: border-box; position: relative; left: 71rpx; top: 0rpx"></input>
+
+<button type="primary" style="position: relative; left: 191rpx; top: -80rpx" bindtap="shanchu">删除</button>
+<text style="position: relative; left: 0rpx; top: -142rpx">主楼</text>
+
+
+<view wx:for="{{List}}" wx:key="key">
+ <view>{{item.userBIANHAO}}</view>
+  <view>{{item.Banji}}</view>
+  <view>{{item.Name}}</view>
+  <view>{{item.Phone}}</view>
+ <view>{{item.time}}</view>
+</view>

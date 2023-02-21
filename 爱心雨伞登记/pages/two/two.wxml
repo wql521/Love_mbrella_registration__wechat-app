@@ -1,0 +1,22 @@
+<!--pages/one/one.wxml-->
+<!--雨伞编号-->
+<view style="position: relative; left: 0rpx; top: 559rpx; width: 750rpx; height: 330rpx; display: block; box-sizing: border-box">
+<view style="width: 46rpx; height: 44rpx; display: block; box-sizing: border-box; position: relative; left: 74rpx; top: 100rpx">B</view>
+  <view class="view-contain-ti" style="width: 596rpx; height: 76rpx; display: flex; box-sizing: border-box; position: relative; left: 80rpx; top: 0rpx">
+    <text class="text-ti">雨伞编号</text>
+    <input type="number" bindinput="bianhao" class="input1"></input>
+  </view>
+  <button class="button1" style="width: 196rpx; height: 80rpx; display: block; box-sizing: border-box; left: 0rpx; top: -12rpx; position: relative" bindtap="save" hidden='{{Hidden1}}'>借</button>
+</view>
+
+<image src="cloud://cloud1-6g5n7d3da0d9860e.636c-cloud1-6g5n7d3da0d9860e-1313177812/政政的副本.jpg" style="position: relative; left: 160rpx; top: -230rpx; width: 430rpx; height: 394rpx; display: inline-block; box-sizing: border-box"></image>
+
+
+<view style="position: relative; left: 64rpx; top: 226rpx; width: 622rpx; height: 80rpx; display: block; box-sizing: border-box; font-size: 150%;font-weight: bolder;">请输入雨伞编号,点击借即可</view>
+
+
+<view style="font-size: 120%; font-weight: 500;position: relative; left: 64rpx; top: 254rpx; width: 430rpx; height: 110rpx; display: block; box-sizing: border-box">遇到问题请联系管理员:</view>
+
+<view style="font-size: 120%; font-weight: 500; position: relative; left: 308rpx; top: 326rpx; width: 430rpx; height: 54rpx; display: block; box-sizing: border-box">王钱龙:19552688010</view>
+
+<view style="font-size: 120%; font-weight: 500; position: relative; left: 308rpx; top: 176rpx; width: 430rpx; height: 54rpx; display: block; box-sizing: border-box">董咨含:17388031613</view>

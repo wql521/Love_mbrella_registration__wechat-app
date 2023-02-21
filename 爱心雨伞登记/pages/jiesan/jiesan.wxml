@@ -1,0 +1,14 @@
+<button class="button2" bindtap="touch1" style="position: relative; left: 0rpx; top: 514rpx">主楼</button>
+<text>\n</text>
+<button class="button2" bindtap="touch2" style="position: relative; left: 0rpx; top: 514rpx">辅楼</button>
+<text>\n</text>
+<button class="button2" bindtap="touch3" style="position: relative; left: 0rpx; top: 514rpx">图书馆</button>
+<text>\n</text>
+<button type="primary" bindtap="touch4" disabled="{{guanbi}}"  style="position: relative; left: 0rpx; top: 502rpx">一键还伞</button>
+<button class="button2" bindtap="touch5" style="position: relative; top: 535rpx; left: 0rpx">常大猫咪图鉴🐱</button>
+<image src="cloud://cloud1-6g5n7d3da0d9860e.636c-cloud1-6g5n7d3da0d9860e-1313177812/love.png" style="position: relative; left: 225rpx; top: -410rpx; width: 526rpx; height: 280rpx; display: inline-block; box-sizing: border-box"></image>
+
+<image src="cloud://cloud1-6g5n7d3da0d9860e.636c-cloud1-6g5n7d3da0d9860e-1313177812/tu1.png" style="position: relative; left: -474rpx; top: -18rpx; width: 114rpx; height: 328rpx; display: inline-block; box-sizing: border-box"></image>
+<image src="cloud://cloud1-6g5n7d3da0d9860e.636c-cloud1-6g5n7d3da0d9860e-1313177812/tu3.png" style="position: relative; left: 92rpx; top: 253rpx; width: 566rpx; height: 304rpx; display: inline-block; box-sizing: border-box"></image>
+
+<image src="cloud://cloud1-6g5n7d3da0d9860e.636c-cloud1-6g5n7d3da0d9860e-1313177812/常大青协LOGO(透明背景).png" style="position: relative; left: 0rpx; top: -1160rpx; width: 220rpx; height: 220rpx; display: inline-block; box-sizing: border-box"></image>

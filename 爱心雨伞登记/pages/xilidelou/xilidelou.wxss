@@ -1,0 +1,41 @@
+/* pages/one/one.wxss */
+.view-contain-ti {
+  display: flex;
+  height: 40px;
+  margin: 20px;
+  border: 3rpx solid #faca82;
+  border-radius: 10rpx;
+}
+
+.text-ti {
+  position: absolute;
+  font-size: 12px;
+  background: white;
+  margin: -10px 0 0 10px;
+  padding: 0 5px;
+  color: rgb(144, 147, 167);
+}
+
+.input1 {
+  margin:  auto 10px;
+}
+
+.button1{
+  height: 60rpx;
+  width: 20rpx;
+  border: 3rpx solid #faca82
+}
+
+
+/**个人信息卡片**/
+.card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin-left: 5%;
+  height: 390rpx;
+  background: rgb(226, 208, 208);
+  border-radius: 10rpx;
+  box-shadow: 5px 5px 5px #cdcfcf;
+ }
