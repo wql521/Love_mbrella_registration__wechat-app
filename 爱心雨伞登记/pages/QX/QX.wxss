@@ -1,0 +1,4 @@
+/* pages/QX/QX.wxss */
+video{
+  width: 100%;
+}

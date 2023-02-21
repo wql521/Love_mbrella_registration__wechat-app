@@ -4,41 +4,28 @@ Page({
 
 data:{
   Hidden:true,
-  array: ['办公室','人事部','武进', '西太湖']
+  array: ['武进', '西太湖']
 },
 bindPickerChange: function(e) {
   console.log('picker发送选择改变，携带值为', e.detail.value)
   this.setData({
     index: e.detail.value
   })
-  if(this.data.index==2){
+  if(this.data.index==0){
     this.setData({Hidden:false})
     var that=this
     that.setData({
       SCHOOL:'武进'
     })
   }
-  else if(this.data.index==3){
+  else if(this.data.index==1){
     this.setData({Hidden:false})
     var that=this
     that.setData({
       SCHOOL:'西太湖'
     })
   }
-  else if (this.data.index==0) {
-    this.setData({Hidden:false})
-    var that=this
-    that.setData({
-      SCHOOL:'办公室'
-    })
-  }
-  else if (this.data.index==1) {
-    this.setData({Hidden:false})
-    var that=this
-    that.setData({
-      SCHOOL:'人事部'
-    })
-  }
+  
 },
 
   //保存数据
@@ -52,10 +39,10 @@ bindPickerChange: function(e) {
     userBANJI:that.data.BANJI, //班级
   }
 })
-if(that.data.NAME=='韩新'){
+if(that.data.NAME=='王钱龙'){
   wx.navigateTo({
   
-    url: '/pages/hx/hx',
+    url: '/pages/All/All',
 
     })
 }
@@ -66,20 +53,7 @@ else if(that.data.SCHOOL=='西太湖'){
 
     })
 }
-else if (that.data.SCHOOL=='办公室') {
-  wx.navigateTo({
-  
-    url: '/pages/qx/bgs/bgs2023/bgs2023',
 
-    })
-}
-else if (that.data.SCHOOL=='人事部') {
-  wx.navigateTo({
-  
-    url: '/pages/qx/rs/rs2023/rs2023',
-
-    })
-}
 else if (that.data.SCHOOL=='武进') {
   wx.navigateTo({
   

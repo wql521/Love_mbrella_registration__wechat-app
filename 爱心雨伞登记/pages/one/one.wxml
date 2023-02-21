@@ -18,6 +18,6 @@
 
 <view style="font-size: 120%; font-weight: 500;position: relative; left: 64rpx; top: 254rpx; width: 430rpx; height: 110rpx; display: block; box-sizing: border-box">遇到问题请联系管理员:</view>
 
-<view style="font-size: 120%; font-weight: 500; position: relative; left: 308rpx; top: 326rpx; width: 430rpx; height: 54rpx; display: block; box-sizing: border-box">王钱龙:19552688010</view>
+<view style="font-size: 120%; font-weight: 500; position: relative; left: 308rpx; top: 326rpx; width: 430rpx; height: 54rpx; display: block; box-sizing: border-box" bindtap="freeTell1">王钱龙:19552688010</view>
 
-<view style="font-size: 120%; font-weight: 500; position: relative; left: 308rpx; top: 176rpx; width: 430rpx; height: 54rpx; display: block; box-sizing: border-box">董咨含:17388031613</view>
+<view style="font-size: 120%; font-weight: 500; position: relative; left: 308rpx; top: 176rpx; width: 430rpx; height: 54rpx; display: block; box-sizing: border-box" bindtap="freeTell2">董咨含:17388031613</view>

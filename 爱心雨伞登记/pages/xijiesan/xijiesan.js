@@ -1,5 +1,11 @@
 // pages/jiesan/jiesan.js
 Page({
+  //跳转到青协
+  touch6:function(){
+    wx.navigateTo({
+      url: '/pages/QX/QX',
+    })
+  },
 
   //跳转到常大猫咪图鉴
   touch5:function(param){
@@ -142,13 +148,29 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    //控制青协按钮
+    Hidden:null
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  
+  onLoad(options) {
+    //加载青协按钮
+    //固定写法,用于获取当前数据库中QX这个表的实例对象
+    wx.cloud.database().collection('QX').doc('fc8e646563f47501014f258102ddd49d').get().then(res =>{
+      console.log('请求成功',res)
+      console.log(res.data.Hidden)
+      this.setData({
+        Hidden:res.data.Hidden
+      })
+     })
+     //请求失败
+    .catch(err =>{
+        console.log('请求失败',err)
+     })
+    
+  },
     
 
   /**

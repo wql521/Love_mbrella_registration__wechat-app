@@ -1,6 +1,29 @@
 const db = wx.cloud.database().collection("xlidelou") //数据库存放用户信息
 Page({
 
+  //打电话
+  freeTell1(){
+    wx.makePhoneCall({
+      phoneNumber: '13962861192',
+      success:function(){
+        console.log("打电话成功")
+      },
+      fail:function(){
+        console.log("打电话失败")
+      }
+    })
+  },
+  freeTell2(){
+    wx.makePhoneCall({
+      phoneNumber: '19816553630',
+      success:function(){
+        console.log("打电话成功")
+      },
+      fail:function(){
+        console.log("打电话失败")
+      }
+    })
+  },
 
 
 

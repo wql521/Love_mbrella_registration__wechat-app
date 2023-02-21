@@ -18,7 +18,6 @@
 
 <view style="font-size: 120%; font-weight: 500;position: relative; left: 64rpx; top: 254rpx; width: 430rpx; height: 110rpx; display: block; box-sizing: border-box">遇到问题请联系管理员:</view>
 
-<view style="font-size: 120%; font-weight: 500; position: relative; left: 308rpx; top: 326rpx; width: 430rpx; height: 54rpx; display: block; box-sizing: border-box">范皙雅:13962861192
-</view>
+<view style="font-size: 120%; font-weight: 500; position: relative; left: 308rpx; top: 326rpx; width: 430rpx; height: 54rpx; display: block; box-sizing: border-box" bindtap="freeTell1">范皙雅:13962861192</view>
 
-<view style="font-size: 120%; font-weight: 500; position: relative; left: 308rpx; top: 176rpx; width: 430rpx; height: 54rpx; display: block; box-sizing: border-box">曹梦蕊:19816553630</view>
+<view style="font-size: 120%; font-weight: 500; position: relative; left: 308rpx; top: 176rpx; width: 430rpx; height: 54rpx; display: block; box-sizing: border-box" bindtap="freeTell2">曹梦蕊:19816553630</view>

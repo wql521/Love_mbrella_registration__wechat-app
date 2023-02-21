@@ -1,5 +1,28 @@
 const db = wx.cloud.database().collection("zhulou") //数据库存放用户信息
 Page({
+  //打电话
+  freeTell1(){
+    wx.makePhoneCall({
+      phoneNumber: '19552688010',
+      success:function(){
+        console.log("打电话成功")
+      },
+      fail:function(){
+        console.log("打电话失败")
+      }
+    })
+  },
+  freeTell2(){
+    wx.makePhoneCall({
+      phoneNumber: '17388031613',
+      success:function(){
+        console.log("打电话成功")
+      },
+      fail:function(){
+        console.log("打电话失败")
+      }
+    })
+  },
 
 
   //保存数据
