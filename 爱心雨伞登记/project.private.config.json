@@ -3,5 +3,25 @@
   "projectname": "%E7%88%B1%E5%BF%83%E9%9B%A8%E4%BC%9E%E7%99%BB%E8%AE%B0",
   "setting": {
     "compileHotReLoad": true
+  },
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "overtime_test",
+          "pathName": "pages/one/one",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/HX/HX",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        }
+      ]
+    }
   }
 }

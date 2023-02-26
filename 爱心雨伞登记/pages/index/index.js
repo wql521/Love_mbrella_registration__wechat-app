@@ -55,10 +55,10 @@ Page({
         })
       }else{
 
-        if (ress.data[0].userNAME=='韩新' || ress.data[0].userNAME=='王钱龙') {
-          console.log('韩新和王钱龙')
+        if (ress.data[0].userNAME=='韩新' ||ress.data[0].userNAME=='王钱龙') {
+          console.log('韩新')
           wx.navigateTo({
-            url: '/pages/All/All',
+            url: '/pages/HX/HX',
           })          
         }else{
         if(ress.data[0].userSCHOOL=='行政部'){
@@ -70,13 +70,13 @@ Page({
         else{
         console.log(ress.data[0].userSCHOOL)
         if(ress.data[0].userSCHOOL=='武进'){
-          console.log('1')
+          console.log('0')
           wx.navigateTo({
             url: '/pages/jiesan/jiesan'
           })
         }
         else if(ress.data[0].userSCHOOL=='西太湖'){
-          console.log('2')
+          console.log('1')
           wx.navigateTo({
             url: '/pages/xijiesan/xijiesan'
           })

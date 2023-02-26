@@ -62,9 +62,6 @@ else if (that.data.SCHOOL=='武进') {
     })
 }
 
-
-
-
   },
   //姓名事件
   name(e){

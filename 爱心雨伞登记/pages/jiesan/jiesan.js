@@ -43,7 +43,6 @@ Page({
   touch4:function(){
 
     this.setData({
-
       guanbi:true
     })
     
@@ -59,8 +58,6 @@ Page({
     let ss = new Date().getSeconds()<10?'0'+new Date().getSeconds():
       new Date().getSeconds()
       dataTime = `${yy}-${mm}-${dd} ${hh}:${mf}:${ss}`; 
-
-    
 
       // login云函数查询用户授权登陆的appid,openid
    wx.cloud.callFunction({

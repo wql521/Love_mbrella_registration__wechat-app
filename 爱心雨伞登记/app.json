@@ -19,7 +19,6 @@
     "pages/cats/警长/警长",
     "pages/cats/多妹/多妹",
     
-    
     "pages/QX/QX",
     "pages/All/All",
     "pages/xijiesan/xijiesan",
@@ -45,7 +44,10 @@
     "pages/allcat/纯色/纯色",
     "pages/allcat/奶牛/奶牛",
     "pages/allcat/狸花/狸花",
-    "pages/allcat/所有/所有"
+    "pages/allcat/所有/所有",
+
+
+    "pages/HX/HX"
   ],
   "window": {
         "backgroundTextStyle": "light",

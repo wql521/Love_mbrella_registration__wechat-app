@@ -1,5 +1,84 @@
-const db = wx.cloud.database().collection("zhulou") //数据库存放用户信息
 Page({
+
+  data:{
+    borrow_Hidden:true, //控制借伞按钮的显示状态(默认隐藏)
+    BIANHAO:null,
+    progress_Hidden:true, //控制进度条是否隐藏(默认隐藏)
+    percentValue:0, //控制进度条
+    Hidden_status:false //控制输入框的显示
+  },
+
+  //增加进度条数据
+  add_Percent(add_Value){
+    let value = this.data.percentValue
+    this.setData({
+      percentValue:value+add_Value
+    })
+  },
+
+  //显示添加记录成功提示
+  show_Success(){
+    wx.showToast({
+      title: '借伞成功',
+      icon: 'success',
+      duration: 2000 //持续的时间
+    })
+  },
+
+  //当有人借伞没有及时归将显示弹窗 
+  overTime(){
+    wx.cloud.callFunction({
+      name: "getOpenid",
+      success:function (res) {
+        var openID = res.result.openid
+        wx.cloud.database().collection("zhulou").where({
+          _openid:openID
+        }).get({
+          success:function(ress){
+            console.log('获取借伞记录')
+            console.log(ress.data[0])
+            if(ress.data.length == 0){
+              console.log('未借伞')
+            }else if(ress.data.length == 1) {
+              if(ress.data[0].didian=="主楼:A"){
+                var temp = ress.data[0].time
+                var start_Time = new Date(temp)
+                //console.log(start_Time)
+                var now_Time = new Date
+                //console.log(now_Time)
+                var now_Time_h = now_Time.getTime()
+                var start_Time_h = start_Time.getTime()
+                var now_start = now_Time_h-start_Time_h
+                //console.log(now_start)
+                var judge_day = Math.floor(now_start/(24*3600*1000))
+                console.log('超时'+judge_day+'天')
+                if(judge_day >3){
+                  wx.cloud.database().collection('zhulou').where({
+                    _openid:openID
+                  }).update({
+                    data:{
+                      ststus:'超时'+judge_day+'天'
+                    },
+                    success:function (res) {
+                      console.log('数据更新成功!')
+                      //弹窗显示用户是否有超时伞
+                      wx.showToast({
+                        title: '您好,您目前有一把雨伞未及时归还,请及时归还!',
+                        icon:'none',//显示图标
+                        duration:3000
+                      })    
+                    }
+                  })
+                }
+              }
+            }
+          }
+        })
+      }
+    })
+  },
+
+
   //打电话
   freeTell1(){
     wx.makePhoneCall({
@@ -27,14 +106,10 @@ Page({
 
   //保存数据
   save(){
-    wx.showToast({
-      title: '借伞成功',
-      icon: 'success',
-      duration: 2000 //持续的时间
-    })
-
     this.setData({
-      Hidden1:true
+      borrow_Hidden:true,
+      progress_Hidden:false,
+      Hidden_status:true
     })
     var that=this; 
     //获取时间
@@ -48,8 +123,8 @@ Page({
     let ss = new Date().getSeconds()<10?'0'+new Date().getSeconds():
       new Date().getSeconds()
       dataTime = `${yy}-${mm}-${dd} ${hh}:${mf}:${ss}`; 
-        // login云函数查询用户授权登陆的appid,openid
-   wx.cloud.callFunction({
+    // login云函数查询用户授权登陆的appid,openid
+    wx.cloud.callFunction({
     name: "getOpenid",
     success(res){
     // 授权用户的openid
@@ -69,7 +144,7 @@ Page({
           userBIANHAO:that.data.BIANHAO ,//雨伞编号
         }
       })
-    })
+    })   
       wx.cloud.database().collection("yonghuxinxi").where({
         _openid:openId
       }).get().then(ress=>{
@@ -82,59 +157,54 @@ Page({
             time:dataTime,
             didian:"主楼:A",
             userBIANHAO:that.data.BIANHAO ,//雨伞编号
-          }})
+          }
+        })
       })
-
     }})
-
-      
-          //删除残余数据
-        wx.cloud.database().collection("zhulou").where({
-         userBIANHAO:that.data.BIANHAO
-        }).remove({})
-
-
-      },
+    //删除残余数据
+    wx.cloud.database().collection("zhulou").where({
+      userBIANHAO:that.data.BIANHAO
+    }).remove({})
+    that.add_Percent(100)
+},
   //编号事件
   bianhao(e){
-    if(e.detail.value >14){
-      this.setData({Hidden1:true})
-
-      if(e.detail.value ==1008611){
-        wx.navigateTo({
-          url: '/pages/guanliyuan/guanliyuan',
-        })
-      } //跳转到管理员界面
-
-      wx.showToast({
-        title: '超出雨伞编号,请重新输入',
-        icon:'none'
-      })
-    }else{
-      this.setData({Hidden1:false})
-      
+    console.log(e)
+    if(e.detail.value <= 14 && e.detail.value >=1 && (e.detail.value.length <=2) ){
       let BIANHAO = e.detail.value;
       if (BIANHAO.length==1){
-        var that =this
-        that.setData({
-          BIANHAO:'0'+e.detail.value
+        this.setData({
+          BIANHAO:'0'+e.detail.value,
+          borrow_Hidden:false
         })
-        
       }else{
-        var that =this
-        that.setData({
-          BIANHAO:e.detail.value
-        })
-        
+        this.setData({
+          BIANHAO:e.detail.value,
+          borrow_Hidden:false
+        })       
       }
-
-
+    }else{
+      if(e.detail.value == 0){
+        this.setData({
+          borrow_Hidden:true,
+          BIANHAO:null
+        })
+      }else{
+        this.setData({
+          borrow_Hidden:true,
+          BIANHAO:null
+        })
+        wx.showToast({
+          title: '错误输入',
+          icon:'error',
+          duration:500
+        })
+      }
     }
-
-  },
+},
   onLoad(){
-    this.setData({
-      Hidden1:true
-    })
+  },
+  onShow(){
+      this.overTime()
   }
 })

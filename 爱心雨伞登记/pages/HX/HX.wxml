@@ -1,0 +1,13 @@
+<!--pages/HX/HX.wxml-->
+<view class="content">
+  <image style="width: 100%;height: 100%;" src="cloud://cloud1-6g5n7d3da0d9860e.636c-cloud1-6g5n7d3da0d9860e-1313177812/HX.jpg"></image>
+</view>
+<view style="position: relative; left: 35rpx; top: -1394rpx; width: 526rpx; height: 40rpx; display: block; box-sizing: border-box; font-size: 40rpx">新姐,欢迎来到爱心雨伞登记</view>
+<view style="position: relative; left: 560rpx; top: -1414rpx; width: 64rpx; height: 62rpx; display: block; box-sizing: border-box; font-size: 50rpx; color: red">VIP</view>
+<view style="position: relative; left: 644rpx; top: -1414rpx; width: 107rpx; height: 40rpx; display: block; box-sizing: border-box; font-size: 40rpx">通道</view>
+<view style="position: relative; left: 35rpx; top: -1414rpx; font-size: 40rpx">在雨天,小王为你提供暖心服务</view>
+<picker mode="multiSelector" range="{{multiArray}}" value="{{multiIndex}}"  bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" style="position: relative; left: 2rpx; top: -1258rpx; width: 356rpx; height: 82rpx; display: block; box-sizing: border-box">
+  <button style="position: relative; left: 10rpx; top: 0rpx; width: 336rpx; height: 73rpx; display: block; box-sizing: border-box">借伞</button>
+</picker>
+<view style="position: relative; left: 71rpx; top: -1433rpx; font-size: 40rpx; width: 573rpx; height: 62rpx; display: block; box-sizing: border-box">动动纤细的小手,点击下方的按钮</view>
+<button type="default" bindtap="huansan" style="position: relative; left: 202rpx; top: -1401rpx">还伞</button>

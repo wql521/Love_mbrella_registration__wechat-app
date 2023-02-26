@@ -13,6 +13,7 @@ App({
     url: "cloud://cloud1-6g5n7d3da0d9860e.636c-cloud1-6g5n7d3da0d9860e-1313177812/",
   }
 })
+
 wx.showShareMenu({
   withShareTicket: true
 })

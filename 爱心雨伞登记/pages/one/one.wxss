@@ -29,7 +29,6 @@
 
 /**个人信息卡片**/
 .card{
-  display: flex;
   justify-content: center;
   align-items: center;
   width: 90%;
@@ -39,3 +38,4 @@
   border-radius: 10rpx;
   box-shadow: 5px 5px 5px #cdcfcf;
  }
+
