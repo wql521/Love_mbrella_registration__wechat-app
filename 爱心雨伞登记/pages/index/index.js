@@ -54,7 +54,6 @@ Page({
           url: '/pages/per/per'
         })
       }else{
-
         if (ress.data[0].userNAME=='韩新' ||ress.data[0].userNAME=='王钱龙') {
           console.log('韩新')
           wx.navigateTo({

@@ -149,7 +149,7 @@ Page({
    */
   data: {
     //控制青协按钮
-    Hidden:null
+    Hidden:true
   },
 
   /**

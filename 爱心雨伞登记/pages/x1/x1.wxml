@@ -13,5 +13,6 @@
   <view>{{item.Name}}</view>
   <view>{{item.Phone}}</view>
  <view>{{item.time}}</view>
+ <text>------------------------------</text>
 </view>
 

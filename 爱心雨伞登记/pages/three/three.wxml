@@ -9,7 +9,7 @@
   <button class="button1" style="width: 196rpx; height: 80rpx; display: block; box-sizing: border-box; left: 0rpx; top: 98rpx; position: relative" bindtap="save" hidden='{{borrow_Hidden}}'>借</button>
 </view>
 <view style="position: relative; left: 57rpx; top: 185rpx; width: 694rpx; height: 75rpx; display: block; box-sizing: border-box">
-<progress hidden="{{progress_Hidden}}" show-info="true" style="position: relative; left: 23rpx; top: 0rpx; width: 649rpx; height: 75rpx; box-sizing: border-box" active="{{ true }}" border-radius="10" stroke-width="12" percent="{{percentValue}}" bindactiveend="show_Success" activeColor="#DC143C"></progress>
+<progress hidden="{{progress_Hidden}}" show-info="true" style="position: relative; left: 23rpx; top: 0rpx; width: 649rpx; height: 75rpx; box-sizing: border-box" active="{{ true }}" border-radius="10" stroke-width="12" percent="{{percentValue}}" bindactiveend="show_Success" activeColor="#DC143C" duration="5"></progress>
 </view>
 <view style="position: relative; width: 750rpx; height: 484rpx; display: flex; box-sizing: border-box; left: 0rpx; top: -524rpx">
 <image src="cloud://cloud1-6g5n7d3da0d9860e.636c-cloud1-6g5n7d3da0d9860e-1313177812/政政的副本.jpg" style="position: relative; width: 472rpx; height: 472rpx; display: block; box-sizing: border-box; left: 140rpx; top: 66rpx">
